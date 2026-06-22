@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Inscripción - Cocina Ya</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <form class="formulario" action="list.html">
+            <h2>INSCRIPCIÓN PARA CURSOS</h2>
+
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+
+
+            <label>Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+
+
+            <label>Email</label>
+            <input type="email" name="correo" placeholder="Ingrese su correo electrónico" required>
+
+
+            <label>Seleccione el curso</label>
+            <select name="curso">
+                <option>Pastelería</option>
+                <option>Gourmet</option>
+                <option>Pastas</option>
+            </select>
+
+
+            <label>Seleccione los días</label>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Lunes</label>
+                <label><input type="checkbox"> Miércoles</label>
+                <label><input type="checkbox"> Viernes</label>
+            </div>
+
+
+            <div class="info">
+                <p>
+                    ⚠️ Para realizar el curso es obligatorio tener secundario completo
+                    y abonar la inscripción de $10.000.
+                </p>
+            </div>
+
+
+            <label>Suba su título (PDF o imagen)</label>
+            <input type="file">
+
+
+            <p class="terminos">
+                Lea nuestros <a href="terminos.html">términos y condiciones</a>.
+            </p>
+
+
+            <button type="submit" class="btn">Enviar inscripción</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

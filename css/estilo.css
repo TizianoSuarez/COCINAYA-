@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f07f5a;
+  padding: 15px 30px;
+}
+
+.logo h2 {
+  color: white;
+}
+
+.titulo {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd1c1;
+  border-bottom: 2px solid white;
+}
+
+#hero {
+  height: 75vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imagenes/fondocard.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#hero h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#hero button {
+  margin-top: 20px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#hero button:hover {
+  background-color: #c1121f;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+#nosotros {
+  margin-top: 40px;
+}
+
+.titulonosotros {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nosotros {
+  max-width: 900px;
+  margin: auto;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.cursos {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.posicion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card-curso {
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pasteleria {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imagenes/pasteleria.jpg);
+}
+
+.gourmet {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imagenes/gourmet.jpg);
+}
+
+.pastas {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imagenes/pastas.jpg);
+}
+
+.card-curso button {
+  margin-top: 20px;
+  background-color: #e63946;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-curso button:hover {
+  background-color: #c1121f;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#caracteristicas h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.informacion ul {
+  list-style: none;
+  text-align: center;
+}
+
+.informacion li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.informacion i {
+  color: #e63946;
+  margin-right: 8px;
+}
+
+footer {
+  background-color: #777;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: #ffd1c1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.informacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto 0 auto; 
+  width: max-content;        
+  display: flex;
+  flex-direction: column;   
+  gap: 15px;                
+}
+
+
+.informacion li {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  display: flex;            
+  align-items: center;     
+  text-align: left;         
+}
+
+
+.informacion li i, 
+.informacion li span {
+  margin-right: 12px;       
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column; 
+    text-align: center;
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  #hero {
+    margin: 20px 10px; 
+    border-radius: 15px;
+  }
+
+  .informacion ul {
+    width: 100%; 
+    padding: 0 15px;
+    align-items: flex-start; 
+  }
+
+  .informacion li {
+    font-size: 15px; 
+  }
+}
